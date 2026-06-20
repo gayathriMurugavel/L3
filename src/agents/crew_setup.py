@@ -22,14 +22,15 @@ def get_llm():
 
 def get_planner_context(user_query: str) -> str:
     """Fetch deterministic inputs for the planner outside the agent loop."""
-    stats = mcp_sqlite_get_stats.invoke({"query": user_query})
-    history = mcp_sqlite_search_history.invoke({"keyword": user_query})
-    return (
+    stats = mcp_sqlite_get_stats.run(user_query)
+    history = mcp_sqlite_search_history.run(user_query)
+    context = (
         "Knowledge base statistics:\n"
         f"{stats}\n\n"
         "Similar query history:\n"
         f"{history}"
     )
+    return context.replace("{", "{{").replace("}", "}}")
 
 
 def build_crew(user_query: str):
