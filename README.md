@@ -1,7 +1,7 @@
 # 🧠 Enterprise Knowledge Assistant
 
 > AI-powered knowledge retrieval using **CrewAI**, **RAG**, **RAGAS**, and **MCP**
-> powered by **Ollama** (llama3.2:1b + nomic-embed-text)
+> powered by **Ollama** (llama3.1:8b + nomic-embed-text)
 
 ---
 
@@ -15,7 +15,7 @@ waste significant time searching these sources manually.
 ### Solution
 An AI-powered Enterprise Knowledge Assistant that:
 - Indexes internal documents into a vector database
-- Uses 5 CrewAI agents to research, generate, review and evaluate answers
+- Uses 3 required CrewAI agents to research, generate, and evaluate answers
 - Integrates **Filesystem MCP** and **SQLite MCP** servers
 - Evaluates output quality using **RAGAS** metrics
 - Exposes a user-friendly **Streamlit** UI
@@ -28,11 +28,9 @@ An AI-powered Enterprise Knowledge Assistant that:
 Streamlit UI
      │
      ▼
-CrewAI (5 Agents)
-├── Planner Agent       → query decomposition (SQLite MCP)
+CrewAI (3 Agents)
 ├── Research Agent      → RAG search + Filesystem MCP + SQLite MCP
 ├── Response Agent      → answer generation (saves via SQLite MCP)
-├── Reviewer Agent      → hallucination check
 └── Evaluation Agent    → final polish + quality score
      │
      ├── RAG Pipeline   → ChromaDB + nomic-embed-text
@@ -74,7 +72,7 @@ pip install -r requirements.txt
 ### 4. Install Ollama
 ```bash
 # Download from https://ollama.com and install
-ollama pull llama3.2:1b
+ollama pull llama3.1:8b
 ollama pull nomic-embed-text:latest
 ollama serve      # Run in a separate terminal
 ```
@@ -130,8 +128,8 @@ enterprise-knowledge-assistant/
 # Terminal 1 – keep Ollama running
 ollama serve
 
-# Terminal 2 – run Streamlit
-streamlit run app.py
+# Terminal 2 – run Streamlit with the project environment
+./start_app.ps1
 ```
 
 Open browser at: **http://localhost:8501**
@@ -152,7 +150,7 @@ Open browser at: **http://localhost:8501**
 3. Click **🚀 Run Agentic Workflow**
 
 ### Step 3 – Review Output
-- **Agent Execution Workflow** — see all 5 agents completing
+- **Agent Execution Workflow** — see all 3 required agents completing
 - **Final Answer** — structured response with citations
 - **Retrieved Context** — raw chunks used by agents
 - **RAGAS Scores** — quality metrics with interpretation
@@ -163,11 +161,9 @@ Open browser at: **http://localhost:8501**
 
 | # | Agent | Role | Tools Used |
 |---|---|---|---|
-| 1 | **Planner** | Decomposes query | SQLite MCP (stats, history) |
-| 2 | **Research** | Retrieves context | RAG search, Filesystem MCP, SQLite MCP |
-| 3 | **Response** | Generates answer | SQLite MCP (save answer) |
-| 4 | **Reviewer** | Checks accuracy | RAG search (verify claims) |
-| 5 | **Evaluation** | Final polish | None (synthesis only) |
+| 1 | **Research** | Retrieves context | RAG search, Filesystem MCP, SQLite MCP |
+| 2 | **Response** | Generates answer | SQLite MCP (save answer) |
+| 3 | **Evaluation** | Final polish | None (synthesis only) |
 
 ---
 
@@ -217,7 +213,7 @@ Open browser at: **http://localhost:8501**
 
 | Criteria | Weight | Implementation |
 |---|---|---|
-| CrewAI Multi-Agent Design | 25% | 5 agents (3 mandatory + 2 bonus) |
+| CrewAI Multi-Agent Design | 25% | 3 mandatory agents |
 | RAG Implementation | 25% | ChromaDB + nomic-embed-text |
 | RAGAS Evaluation | 20% | All 4 mandatory metrics |
 | MCP Integration | 20% | Filesystem + SQLite MCP |
@@ -232,7 +228,7 @@ Open browser at: **http://localhost:8501**
 | Language | Python 3.11.15 |
 | UI | Streamlit 1.39 |
 | Agent Framework | CrewAI 0.86 |
-| LLM | Ollama / llama3.2:1b |
+| LLM | Ollama / llama3.1:8b |
 | Embeddings | Ollama / nomic-embed-text |
 | Vector DB | ChromaDB |
 | RAG Framework | LangChain |

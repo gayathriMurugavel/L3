@@ -5,8 +5,8 @@ load_dotenv()
 
 # Ollama config
 OLLAMA_BASE_URL = os.getenv("OLLAMA_BASE_URL", "http://localhost:11434")
-LLM_MODEL = "ollama/llama3.2:1b"          # CrewAI format
-LLM_MODEL_RAW = "llama3.2:1b"             # For LangChain / RAGAS
+LLM_MODEL = "ollama/llama3.1:8b"          # CrewAI format
+LLM_MODEL_RAW = "llama3.1:8b"             # For LangChain / RAGAS
 EMBED_MODEL = "nomic-embed-text:latest"
 
 # Vector DB

@@ -64,7 +64,7 @@ st.markdown("""
 <div class="main-header">
     <h1 style="margin:0">🧠 Enterprise Knowledge Assistant</h1>
     <p style="margin:0.3rem 0 0 0; opacity:0.85;">
-        CrewAI (5 Agents) • RAG • RAGAS Evaluation • MCP Servers • Ollama
+        CrewAI (3 Agents) • RAG • RAGAS Evaluation • MCP Servers • Ollama
     </p>
 </div>
 """, unsafe_allow_html=True)
@@ -202,7 +202,7 @@ with st.sidebar:
 
 # ── MODEL INFO BADGES ────────────────────────────────────────────────
 col_m1, col_m2, col_m3, col_m4 = st.columns(4)
-col_m1.info("🤖 LLM: llama3.2:1b")
+col_m1.info("🤖 LLM: llama3.1:8b")
 col_m2.info("🔢 Embed: nomic-embed-text")
 col_m3.info("🗄️ DB: ChromaDB")
 col_m4.info("🗃️ MCP: Filesystem + SQLite")
@@ -241,28 +241,27 @@ if run_btn and query.strip():
     agent_status = st.empty()
     with agent_status.container():
         st.markdown("""
-        <div class="agent-step">⏳ <b>Step 1/5:</b> Planner Agent – Analyzing query…</div>
-        <div class="agent-step">⏸ <b>Step 2/5:</b> Research Agent – Waiting…</div>
-        <div class="agent-step">⏸ <b>Step 3/5:</b> Response Agent – Waiting…</div>
-        <div class="agent-step">⏸ <b>Step 4/5:</b> Reviewer Agent – Waiting…</div>
-        <div class="agent-step">⏸ <b>Step 5/5:</b> Evaluation Agent – Waiting…</div>
+        <div class="agent-step">⏳ <b>Step 1/3:</b> Research Agent – Retrieving context…</div>
+        <div class="agent-step">⏸ <b>Step 2/3:</b> Response Agent – Waiting…</div>
+        <div class="agent-step">⏸ <b>Step 3/3:</b> Evaluation Agent – Waiting…</div>
         """, unsafe_allow_html=True)
 
     try:
         with st.spinner("🤖 CrewAI agents are working… (this may take a minute)"):
-            crew, research_task, response_task = build_crew(query)
+            crew = build_crew(query)
             result = crew.kickoff(inputs={"query": query})
             result_str = str(result)
+
+        if not run_ragas:
+            save_query(query, result_str)
 
         # Update status to all complete
         agent_status.empty()
         with agent_status.container():
             st.markdown("""
-            <div class="agent-step">✅ <b>Step 1/5:</b> Planner Agent – Complete</div>
-            <div class="agent-step">✅ <b>Step 2/5:</b> Research Agent – Complete</div>
-            <div class="agent-step">✅ <b>Step 3/5:</b> Response Agent – Complete</div>
-            <div class="agent-step">✅ <b>Step 4/5:</b> Reviewer Agent – Complete</div>
-            <div class="agent-step">✅ <b>Step 5/5:</b> Evaluation Agent – Complete</div>
+            <div class="agent-step">✅ <b>Step 1/3:</b> Research Agent – Complete</div>
+            <div class="agent-step">✅ <b>Step 2/3:</b> Response Agent – Complete</div>
+            <div class="agent-step">✅ <b>Step 3/3:</b> Evaluation Agent – Complete</div>
             """, unsafe_allow_html=True)
 
         # ── FINAL ANSWER ────────────────────────────────────────────
