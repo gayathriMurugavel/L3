@@ -1,0 +1,22 @@
+Screenshot 1 — HR Query
+What is the annual leave entitlement and how do I apply for leave?
+Screenshot 2 — IT Support Query
+How do I submit an IT support ticket and what are the priority levels?
+Screenshot 3 — Security Query
+What are the data security requirements for remote work?
+Screenshot 4 — Onboarding Query
+What happens during the probation period and what benefits do new employees get?
+Screenshot 5 — Multi-topic Query
+What is the password policy and how do I reset my password?
+Screenshot 6 — Complex Query
+What are the penalties for data security violations and what should I do if I discover a data breach?
+
+
+✅ Screenshot 1 → App startup (home screen)
+✅ Screenshot 2 → Document upload + vector index build
+✅ Screenshot 3 → Agent execution workflow (all 5 agents)
+✅ Screenshot 4 → Final answer with citations
+✅ Screenshot 5 → Retrieved context chunks
+✅ Screenshot 6 → RAGAS evaluation scores
+✅ Screenshot 7 → Query history in sidebar
+✅ Screenshot 8 → Statistics dashboard

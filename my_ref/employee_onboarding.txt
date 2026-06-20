@@ -1,0 +1,91 @@
+ACME CORPORATION - EMPLOYEE ONBOARDING GUIDE
+New Employee Handbook | HR Department | 2024
+=============================================
+
+1. FIRST DAY CHECKLIST
+------------------------
+✓ Report to Reception at 9:00 AM on your first day
+✓ Bring original ID documents for verification
+✓ Meet your assigned HR buddy at Reception
+✓ Collect your ID badge and access card
+✓ Receive company laptop and mobile device from IT
+✓ Sign and submit all onboarding documents
+✓ Complete emergency contact form
+
+2. WEEK 1 SCHEDULE
+--------------------
+Day 1: HR Orientation — Company overview, policies, benefits
+Day 2: IT Setup — Systems access, email, tools training
+Day 3: Department Introduction — Meet your team and manager
+Day 4: Role-specific training begins
+Day 5: Review and Q&A session with HR
+
+3. SYSTEMS ACCESS SETUP
+-------------------------
+Email: Your corporate email is firstname.lastname@acmecorp.com
+HR Portal: hr.acmecorp.com (leave, payroll, benefits)
+IT Portal: helpdesk.acmecorp.com (support tickets, software)
+Learning Portal: learn.acmecorp.com (training courses)
+Project Management: projects.acmecorp.com (Jira, Confluence)
+Communication: Microsoft Teams (installed on your laptop)
+
+4. PROBATION PERIOD
+--------------------
+All new employees undergo a 6-month probation period.
+Performance reviews are conducted at 1 month, 3 months, and 6 months.
+Manager feedback is provided at each review milestone.
+Successful completion leads to permanent employment confirmation.
+During probation: limited leave, no bonus eligibility, no internal transfer.
+
+5. EMPLOYEE BENEFITS
+---------------------
+Health Insurance: Comprehensive medical, dental, and vision coverage
+Life Insurance: Coverage equal to 2x annual salary
+Retirement Plan: 401(k) with 5% company match
+Annual Bonus: Performance-based, paid in January
+Learning Budget: $2,000 per year for courses and certifications
+Gym Membership: 50% subsidy for gym memberships
+Employee Assistance Program: Free counseling and mental health support
+
+6. CODE OF CONDUCT
+-------------------
+Treat all colleagues with respect and professionalism.
+Zero tolerance for harassment, discrimination, or bullying.
+Conflicts of interest must be disclosed to HR immediately.
+Confidentiality of company information must be maintained at all times.
+Social media posts must not disclose confidential company information.
+Dress code is business casual Monday to Thursday, casual on Fridays.
+
+7. PERFORMANCE MANAGEMENT
+---------------------------
+Annual performance reviews are conducted every December.
+Goals are set at the beginning of each year using SMART framework.
+Mid-year check-in is conducted in June.
+Performance ratings: Outstanding, Exceeds Expectations, Meets Expectations, Needs Improvement.
+Promotion decisions are based on performance ratings and business needs.
+
+8. LEARNING AND DEVELOPMENT
+-----------------------------
+ACME encourages continuous learning and professional development.
+All employees must complete mandatory compliance training annually.
+Learning Portal offers 500+ online courses.
+External certifications are reimbursed up to $2,000 per year.
+Mentorship program is available — apply via HR Portal.
+Internal job postings are available after 1 year of service.
+
+9. PAYROLL INFORMATION
+-----------------------
+Salary is paid on the last working day of each month.
+Payslips are available on the HR Portal.
+Direct deposit is the standard payment method.
+Overtime is paid at 1.5x the hourly rate for non-exempt employees.
+Expense reimbursements are processed within 5 business days.
+Tax documents (W-2) are available by January 31 each year.
+
+10. IMPORTANT CONTACTS
+-----------------------
+HR Department: hr@acmecorp.com | +1-800-HR-ACME
+IT Helpdesk: helpdesk@acmecorp.com | +1-800-IT-ACME
+Security Team: security@acmecorp.com | +1-800-SEC-ACME
+Payroll: payroll@acmecorp.com | +1-800-PAY-ACME
+Reception: reception@acmecorp.com | +1-800-ACME-HQ

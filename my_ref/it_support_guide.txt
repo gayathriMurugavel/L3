@@ -1,0 +1,90 @@
+ACME CORPORATION - IT SUPPORT AND HELPDESK GUIDE
+Version 3.0 | IT Department | Updated: March 2024
+==================================================
+
+1. HOW TO SUBMIT A SUPPORT TICKET
+-----------------------------------
+Step 1: Visit the IT Helpdesk Portal at helpdesk.acmecorp.com
+Step 2: Click on "New Ticket" button on the dashboard
+Step 3: Select the appropriate category:
+        - Hardware Issues
+        - Software Issues
+        - Network and Connectivity
+        - Email and Communication
+        - Access and Permissions
+        - Security Incidents
+Step 4: Fill in the subject line with a clear description
+Step 5: Describe the issue in detail including error messages
+Step 6: Attach screenshots if applicable
+Step 7: Set priority level: Low, Medium, High, or Critical
+Step 8: Click Submit — you will receive a ticket number via email
+
+2. TICKET PRIORITY LEVELS
+--------------------------
+CRITICAL: System outage affecting multiple users — Response: 1 hour
+HIGH:     Single user cannot work at all — Response: 4 hours
+MEDIUM:   Work impacted but workaround available — Response: 8 hours
+LOW:      Minor issue or general question — Response: 24 hours
+
+3. SOFTWARE INSTALLATION POLICY
+---------------------------------
+All software installations must be approved by IT department.
+Employees must NOT install unauthorized software on company devices.
+Submit a software request via the IT portal with business justification.
+Approved software list is maintained at: it.acmecorp.com/approved-software
+IT department will install approved software within 2 business days.
+
+4. PASSWORD POLICY
+-------------------
+Passwords must be at least 12 characters long.
+Must contain uppercase, lowercase, numbers, and special characters.
+Passwords must be changed every 90 days.
+Previous 10 passwords cannot be reused.
+Multi-factor authentication (MFA) is mandatory for all accounts.
+Never share your password with anyone including IT staff.
+
+5. VPN AND REMOTE ACCESS
+--------------------------
+Download the VPN client from: it.acmecorp.com/vpn
+Use your corporate credentials to connect.
+VPN must be active when accessing company resources from outside office.
+VPN auto-disconnects after 8 hours of inactivity.
+Report any VPN issues to helpdesk@acmecorp.com
+
+6. EMAIL GUIDELINES
+--------------------
+Corporate email must be used for all official communications.
+Maximum email attachment size is 25 MB.
+Use OneDrive or SharePoint links for large files.
+Do not use corporate email for personal communications.
+Phishing emails must be reported to: security@acmecorp.com
+
+7. HARDWARE REQUEST PROCESS
+-----------------------------
+Submit hardware requests via IT Portal under "Asset Request"
+New hire hardware is provisioned within 3 business days.
+Hardware upgrades require manager approval and budget allocation.
+Damaged hardware must be reported to IT immediately.
+Lost or stolen devices must be reported within 1 hour to security@acmecorp.com
+
+8. COMMON TROUBLESHOOTING STEPS
+---------------------------------
+Slow Computer:
+- Restart the computer
+- Clear browser cache and cookies
+- Check for pending Windows updates
+- Contact IT if issue persists
+
+Cannot Connect to Internet:
+- Check network cable or WiFi connection
+- Restart router if working from home
+- Disable and re-enable network adapter
+- Submit ticket if unresolved
+
+Forgot Password:
+- Visit: password.acmecorp.com
+- Click "Reset Password"
+- Enter your employee email
+- Follow instructions sent to your recovery email
+
+IT Department: helpdesk@acmecorp.com | Phone: +1-800-IT-ACME | Hours: 24/7
