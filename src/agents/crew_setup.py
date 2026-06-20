@@ -20,8 +20,21 @@ def get_llm():
     )
 
 
+def get_planner_context(user_query: str) -> str:
+    """Fetch deterministic inputs for the planner outside the agent loop."""
+    stats = mcp_sqlite_get_stats.invoke({"query": user_query})
+    history = mcp_sqlite_search_history.invoke({"keyword": user_query})
+    return (
+        "Knowledge base statistics:\n"
+        f"{stats}\n\n"
+        "Similar query history:\n"
+        f"{history}"
+    )
+
+
 def build_crew(user_query: str):
     llm = get_llm()
+    planner_context = get_planner_context(user_query)
 
     # ── AGENT 1: PLANNER (Bonus) ───────────────────────────────────────
     planner_agent = Agent(
@@ -34,7 +47,7 @@ def build_crew(user_query: str):
             "Expert query analyst who breaks complex enterprise questions "
             "into structured sub-questions for efficient research."
         ),
-        tools=[mcp_sqlite_get_stats, mcp_sqlite_search_history],
+        tools=[],
         llm=llm,
         verbose=True,
         allow_delegation=False,
@@ -128,9 +141,12 @@ def build_crew(user_query: str):
     plan_task = Task(
         description=(
             "Analyze this query: '{query}'\n\n"
-            "1. Check SQLite history for similar past queries.\n"
-            "2. Get KB stats to understand available knowledge.\n"
-            "3. Create a research plan with 2-3 specific sub-questions.\n"
+            "Use the pre-fetched planning context below. Do not call tools.\n\n"
+            "Planning context:\n"
+            f"{planner_context}\n\n"
+            "1. Summarize what prior history and KB coverage imply for this query.\n"
+            "2. Create a research plan with 2-3 specific sub-questions.\n"
+            "3. Keep the output compact and directly useful for the research agent.\n"
             "Output: A structured research plan."
         ),
         expected_output=(

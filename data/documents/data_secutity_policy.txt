@@ -1,0 +1,91 @@
+ACME CORPORATION - DATA SECURITY AND PRIVACY POLICY
+Version 4.2 | Information Security Team | 2024
+=====================================================
+
+1. DATA CLASSIFICATION
+-----------------------
+ACME classifies data into four levels:
+
+PUBLIC: Information approved for public release
+        Examples: Marketing materials, press releases
+
+INTERNAL: General business information for employees only
+          Examples: Internal memos, meeting notes, org charts
+
+CONFIDENTIAL: Sensitive business information with restricted access
+              Examples: Financial reports, customer data, contracts
+
+RESTRICTED: Highly sensitive data requiring strictest controls
+            Examples: Employee salaries, trade secrets, legal documents
+
+2. DATA HANDLING REQUIREMENTS
+-------------------------------
+Public Data:      No special handling required
+Internal Data:    Must not be shared outside organization
+Confidential:     Encrypted storage, need-to-know access only
+Restricted:       Encrypted, access logged, manager approval required
+
+3. ACCEPTABLE USE POLICY
+--------------------------
+Company systems must only be used for legitimate business purposes.
+Employees must not access, modify, or delete data without authorization.
+Personal use of company devices should be minimal and not interfere with work.
+Downloading company data to personal devices is strictly prohibited.
+Using personal cloud storage (Google Drive, Dropbox) for company data is not allowed.
+
+4. DATA ENCRYPTION REQUIREMENTS
+---------------------------------
+All laptops and mobile devices must have full disk encryption enabled.
+Confidential and Restricted data must be encrypted in transit and at rest.
+Use only company-approved encryption tools.
+Email encryption is required for sending Confidential or Restricted data.
+USB drives must be encrypted — unencrypted USB drives are not permitted.
+
+5. ACCESS CONTROL POLICY
+--------------------------
+Principle of Least Privilege: Employees get minimum access needed for their role.
+Access requests must be submitted via IT Portal with manager approval.
+Access must be revoked immediately upon employee termination.
+Quarterly access reviews are conducted by department heads.
+Shared accounts and shared passwords are strictly prohibited.
+
+6. INCIDENT REPORTING
+----------------------
+Any suspected data breach must be reported within 1 hour of discovery.
+Report to: security@acmecorp.com and your direct manager
+Do not attempt to investigate or fix a breach yourself.
+The Security team will conduct a formal investigation.
+Employees who fail to report incidents may face disciplinary action.
+
+7. REMOTE WORK SECURITY
+------------------------
+Always use VPN when working remotely.
+Do not work on confidential data in public places like cafes.
+Lock your screen when stepping away from your workstation.
+Use company-provided devices for work — personal devices need MDM enrollment.
+Ensure home WiFi is password protected with WPA2 or higher.
+
+8. THIRD PARTY AND VENDOR SECURITY
+------------------------------------
+Vendors must sign a Non-Disclosure Agreement before accessing company data.
+Third-party access is logged and monitored.
+Vendors must comply with ACME data security standards.
+Vendor access is reviewed and renewed annually.
+Any vendor data breach must be reported to ACME security team immediately.
+
+9. COMPLIANCE AND REGULATIONS
+-------------------------------
+ACME Corporation complies with:
+- GDPR (General Data Protection Regulation)
+- CCPA (California Consumer Privacy Act)
+- ISO 27001 Information Security Standard
+- SOC 2 Type II Compliance
+
+10. PENALTIES FOR VIOLATION
+-----------------------------
+Minor violations: Written warning
+Moderate violations: Suspension without pay
+Severe violations: Termination and potential legal action
+Data theft: Criminal prosecution
+
+Security Team: security@acmecorp.com | Hotline: +1-800-SEC-ACME (24/7)
